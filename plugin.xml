@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.debug.ui.detailPaneFactories">
+      <detailFactories
+            class="ca.ubc.cs.cpsc507.vebugger.VisualDetailPaneFactory"
+            id="ca.ubc.cs.cpsc507.vebugger.visualDetailPaneFactory">
+         <enablement>
+            <with
+                  variable="selection">
+               <iterate>
+                  <or>
+                     <instanceof
+                           value="org.eclipse.debug.core.model.IVariable">
+                     </instanceof>
+                     <instanceof
+                           value="org.eclipse.debug.core.model.IExpression">
+                     </instanceof>
+                     <instanceof
+                           value="java.lang.String">
+                     </instanceof>
+                  </or>
+               </iterate>
+            </with>
+         </enablement>
+      </detailFactories>
+   </extension>
+
+</plugin>
