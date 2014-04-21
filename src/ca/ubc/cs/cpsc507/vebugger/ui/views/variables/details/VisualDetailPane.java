@@ -111,6 +111,14 @@ public class VisualDetailPane implements IDetailPane, IWatchExpressionListener {
                 @Override
                 public void run() {
                     try {
+                        if (result.hasErrors()) {
+                            DebugException e = result.getException();
+                            if (e != null) {
+                                throw e;
+                            } else {
+                                throw new DebugException(null);
+                            }
+                        }
                         browser.setText(result.getValue().getValueString());
                     } catch (DebugException e) {
                         setBrowserTextToString(e.toString(), "Error!");
