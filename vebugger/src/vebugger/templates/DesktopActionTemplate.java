@@ -51,10 +51,13 @@ public class DesktopActionTemplate extends VebuggerTemplate {
     public void render(StringBuilder sb, Object obj) {
         Action currentAction = (Action) obj;
 
-        sb.append("<style>.java-awt-Desktop-Action td {font-family: monospace; font-size: 0.7em; text-align: center;}")
-                .append(".java-awt-Desktop-Action td.active {color: black;}")
-                .append(".java-awt-Desktop-Action td.inactive {color: silver;}</style>")
-                .append("<table class=\"java-awt-Desktop-Action\"><tbody><tr>");
+        sb.append("<style>");
+        sb.append("table.java-awt-Desktop-Action > tbody > tr > td {font-family: monospace; font-size: 0.7em; text-align: center;}");
+        sb.append("table.java-awt-Desktop-Action > tbody > tr > td.active {color: black;}");
+        sb.append("table.java-awt-Desktop-Action > tbody > tr > td.inactive {color: silver;}");
+        sb.append("</style>");
+
+        sb.append("<table class=\"java-awt-Desktop-Action\"><tbody><tr>");
         for (Action someAction : Action.values()) {
             sb.append("<td><img src=\"");
             if (someAction == currentAction) {
