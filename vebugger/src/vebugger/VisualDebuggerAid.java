@@ -31,10 +31,14 @@ public final class VisualDebuggerAid {
             VebuggerTemplate template = findMatchingTemplate(obj.getClass());
             if (template != null) {
                 StringBuilder sb = new StringBuilder();
+
+                if (includeHtmlWrapper) {
+                    sb.append("<html><body>");
+                }
+
                 template.render(sb, obj);
 
                 if (includeHtmlWrapper) {
-                    sb.insert(0, "<html><body>");
                     sb.append("</body></html>");
                 }
 
