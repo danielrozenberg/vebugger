@@ -25,6 +25,7 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.ui.IWorkbenchPartSite;
+import org.omg.CORBA.portable.UnknownException;
 
 public class VisualDetailPane implements IDetailPane, IWatchExpressionListener {
 
@@ -116,11 +117,11 @@ public class VisualDetailPane implements IDetailPane, IWatchExpressionListener {
                             if (e != null) {
                                 throw e;
                             } else {
-                                throw new DebugException(null);
+                                throw new UnknownException(null);
                             }
                         }
                         browser.setText(result.getValue().getValueString());
-                    } catch (DebugException e) {
+                    } catch (DebugException | UnknownException e) {
                         setBrowserTextToString(e.toString(), "Error!");
                     }
                 }
