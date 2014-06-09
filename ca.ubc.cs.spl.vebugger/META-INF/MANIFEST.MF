@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Vebugger
-Bundle-SymbolicName: ca.ubc.cs.cpsc507.vebugger;singleton:=true
+Bundle-SymbolicName: ca.ubc.cs.spl.vebugger;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: ca.ubc.cs.cpsc507.vebugger.Activator
+Bundle-Activator: ca.ubc.cs.spl.vebugger.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.debug.ui;bundle-version="3.9.0",

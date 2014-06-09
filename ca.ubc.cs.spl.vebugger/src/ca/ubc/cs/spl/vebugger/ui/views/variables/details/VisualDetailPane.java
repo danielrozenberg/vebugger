@@ -1,4 +1,4 @@
-package ca.ubc.cs.cpsc507.vebugger.ui.views.variables.details;
+package ca.ubc.cs.spl.vebugger.ui.views.variables.details;
 
 import org.eclipse.debug.core.DebugException;
 import org.eclipse.debug.core.DebugPlugin;

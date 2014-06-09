@@ -4,8 +4,8 @@
    <extension
          point="org.eclipse.debug.ui.detailPaneFactories">
       <detailFactories
-            class="ca.ubc.cs.cpsc507.vebugger.VisualDetailPaneFactory"
-            id="ca.ubc.cs.cpsc507.vebugger.visualDetailPaneFactory">
+            class="ca.ubc.cs.spl.vebugger.VisualDetailPaneFactory"
+            id="ca.ubc.cs.spl.vebugger.visualDetailPaneFactory">
          <enablement>
             <with
                   variable="selection">

@@ -1,4 +1,4 @@
-package ca.ubc.cs.cpsc507.vebugger;
+package ca.ubc.cs.spl.vebugger;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -7,7 +7,7 @@ import org.eclipse.debug.ui.IDetailPane;
 import org.eclipse.debug.ui.IDetailPaneFactory;
 import org.eclipse.jface.viewers.IStructuredSelection;
 
-import ca.ubc.cs.cpsc507.vebugger.ui.views.variables.details.VisualDetailPane;
+import ca.ubc.cs.spl.vebugger.ui.views.variables.details.VisualDetailPane;
 
 public class VisualDetailPaneFactory implements IDetailPaneFactory {
 
