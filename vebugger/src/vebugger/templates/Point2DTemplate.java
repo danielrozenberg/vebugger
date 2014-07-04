@@ -37,7 +37,7 @@ public class Point2DTemplate extends VebuggerTemplate {
         double panY = (-y / scale) * 100 + 97;
 
         sb.append("<style>");
-        sb.append("table.java-awt-geom-Point2D {border-spacing: 0px; border-collapse: collapse; empty-cells: show; padding: 0;}");
+        sb.append("table.java-awt-geom-Point2D {border-spacing: 0px; border-collapse: collapse; empty-cells: show; font-size: 12px; padding: 0;}");
         sb.append("table.java-awt-geom-Point2D > tbody > tr > td {text-align: center; vertical-align: center;}");
         sb.append("table.java-awt-geom-Point2D > tbody > tr > td.masterCell {text-align: left; vertical-align: top;}");
         sb.append("table.java-awt-geom-Point2D > tbody > tr > td.cell {border: 1px dotted silver; width: 100px; height: 100px;}");

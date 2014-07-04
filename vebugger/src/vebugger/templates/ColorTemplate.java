@@ -24,7 +24,12 @@ public class ColorTemplate extends VebuggerTemplate {
                 .append(" tbody > tr > td.color > div {width:100px; height:100px; background-color: #")
                 .append(String.format("%06x", color.getRGB() & 0xffffff)).append("; opacity: ")
                 .append(color.getAlpha() / 255.0).append(";}");
-        sb.append("table.java-awt-Color-").append(hashCode).append(" tbody > tr > td.value {font-family: monospace;}");
+        sb.append("table.java-awt-Color-").append(hashCode)
+                .append(" {border-spacing: 0px; border-collapse: collapse;}");
+        sb.append("table.java-awt-Color-").append(hashCode).append(" tbody > tr > td {border: 0px;}");
+        sb.append("table.java-awt-Color-")
+                .append(hashCode)
+                .append(" tbody > tr > td.value {font-family: monospace; height: 25px; padding: 0 4px; vertical-align: middle;}");
         sb.append("table.java-awt-Color-").append(hashCode).append(" tbody > tr > td.red {color: red;}");
         sb.append("table.java-awt-Color-").append(hashCode).append(" tbody > tr > td.green {color: green;}");
         sb.append("table.java-awt-Color-").append(hashCode).append(" tbody > tr > td.blue {color: blue;}");

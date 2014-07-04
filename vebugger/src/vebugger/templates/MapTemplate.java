@@ -16,7 +16,7 @@ public class MapTemplate extends VebuggerTemplate {
     @Override
     public void render(StringBuilder sb, Object obj) {
         sb.append("<style>");
-        sb.append("table.java-util-Map {border-collapse: collapse;}");
+        sb.append("table.java-util-Map {border-collapse: collapse; font-size: 12px;}");
         sb.append("table.java-util-Map > * > tr > * {padding: 4px;}");
         sb.append("table.java-util-Map > thead > tr {border-bottom: 2px solid black;}");
         sb.append("table.java-util-Map > * > tr > *:first-child:not(:last-child) {border-right: 1px dotted silver;}");

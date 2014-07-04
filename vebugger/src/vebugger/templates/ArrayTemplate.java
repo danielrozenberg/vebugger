@@ -15,7 +15,7 @@ public class ArrayTemplate extends VebuggerTemplate {
         Object[] array = (Object[]) obj;
 
         sb.append("<style>");
-        sb.append("table.array {border-collapse: collapse;}");
+        sb.append("table.array {border-collapse: collapse; font-size: 12px;}");
         sb.append("table.array > * > tr > * {padding: 4px;}");
         sb.append("table.array > thead > tr {border-bottom: 2px solid black;}");
         sb.append("table.array > thead > tr > th.array-index, table.array > tbody > tr > th {border-right: 1px dotted silver;}");

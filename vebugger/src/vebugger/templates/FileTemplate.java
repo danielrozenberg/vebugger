@@ -15,7 +15,7 @@ public class FileTemplate extends VebuggerTemplate {
     public void render(StringBuilder sb, Object obj) {
         File file = (File) obj;
         sb.append("<style>");
-        sb.append("table.java-io-File {border-collapse: collapse;}");
+        sb.append("table.java-io-File {border-collapse: collapse; font-size: 12px;}");
         sb.append("table.java-io-File > * > tr > * {padding: 4px;}");
         sb.append("table.java-io-File > thead > tr {border-bottom: 2px solid black;}");
         sb.append("table.java-io-File > * > tr > *:first-child:not(:last-child) {border-right: 1px dotted silver;}");
