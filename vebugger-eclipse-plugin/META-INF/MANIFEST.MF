@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Vebugger
-Bundle-SymbolicName: ca.ubc.cs.spl.vebugger;singleton:=true
+Bundle-SymbolicName: vebugger-eclipse-plugin;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: ca.ubc.cs.spl.vebugger.Activator
 Require-Bundle: org.eclipse.ui,
