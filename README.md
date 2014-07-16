@@ -7,6 +7,38 @@ This is a work in progress.
 
 
 
+
+
+Examples
+--------
+
+#### class Color
+
+![Color](https://raw.githubusercontent.com/daniboy/vebugger/master/readme-figures/color.png)
+
+Vebugger's visualization of a `Color` class instance inside the Variables view of Eclipse's debug perspective.
+This visualization exposes the color represented by the object in a fashion more easily comprehensible compared to a textual representation.
+
+#### enum Desktop.Action
+
+![Desktop.Action](https://raw.githubusercontent.com/daniboy/vebugger/master/readme-figures/desktop-action.png)
+
+Vebugger's visualization of a `Desktop.Action` enum instance inside a runtime mouse-over tooltip.
+Unlike the textual representation, this visualization exposes the alternative visual states of the enum.
+
+#### class Locale
+
+![Locale](https://raw.githubusercontent.com/daniboy/vebugger/master/readme-figures/locale.png)
+
+Vebugger's visualization of a Locale instance.
+
+#### class LinkedList
+
+![LinkedList](https://raw.githubusercontent.com/daniboy/vebugger/master/readme-figures/linked-list.png)
+
+Vebugger's visualization of a LinkedList instance.
+
+
 Tinkering
 --------
 1. Import the plugin project (`vebugger-eclipse-plugin`) to your Eclipse workspace and run it as an Eclipse Application
