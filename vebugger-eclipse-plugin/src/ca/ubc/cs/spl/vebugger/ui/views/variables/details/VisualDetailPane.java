@@ -109,6 +109,7 @@ public class VisualDetailPane implements IDetailPane, IWatchExpressionListener {
     public void watchEvaluationFinished(final IWatchExpressionResult result) {
         if (result != null) {
             Display.getDefault().asyncExec(new Runnable() {
+                @SuppressWarnings("synthetic-access")
                 @Override
                 public void run() {
                     try {
@@ -116,9 +117,8 @@ public class VisualDetailPane implements IDetailPane, IWatchExpressionListener {
                             DebugException e = result.getException();
                             if (e != null) {
                                 throw e;
-                            } else {
-                                throw new UnknownException(null);
                             }
+                            throw new UnknownException(null);
                         }
                         browser.setText(result.getValue().getValueString());
                     } catch (DebugException | UnknownException e) {
