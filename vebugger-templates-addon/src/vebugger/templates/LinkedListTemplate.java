@@ -26,9 +26,7 @@ public class LinkedListTemplate extends VebuggerTemplate {
         sb.append("</style>");
 
         if (list.size() > 0) {
-            sb.append(
-                    "<table class=\"java-util-LinkedList\"><thead><tr><th>Index</th><th>Value</th></tr></thead><tbody><tr><th>")
-                    .append(-1).append("</th><th>head</th></tr><tr><th></th><td>↑ ↓</td></tr>");
+            sb.append("<table class=\"java-util-LinkedList\"><thead><tr><th>Index</th><th>Value</th></tr></thead><tbody><tr><th></th><th>head</th></tr><tr><th></th><td>↑ ↓</td></tr>");
             int i = 0;
             for (Object o : list) {
                 sb.append("<tr><th>").append(i).append("</th><td><div>").append(VisualDebuggerAid.toString(o, false))
@@ -36,7 +34,7 @@ public class LinkedListTemplate extends VebuggerTemplate {
                 sb.append("<tr><th></th><td>↑ ↓</td></tr>");
                 i++;
             }
-            sb.append("<tr><th>").append(i).append("</th><th>tail</th></tr></tbody></table>");
+            sb.append("<tr><th></th><th>tail</th></tr></tbody></table>");
         } else {
             sb.append("[] <span style=\"color: silver; font-style: italic;\">(empty LinkedList)</span>");
         }
