@@ -45,7 +45,7 @@ public class Point2DTemplate extends VebuggerTemplate {
         sb.append("table.java-awt-geom-Point2D > tbody > tr > td.left {border-right: 1px solid black;}");
         sb.append("table.java-awt-geom-Point2D > tbody > tr > td > p.rotate {transform: rotate(-90.0deg); -moz-transform: rotate(-90.0deg); -ms-transform: rotate(-90.0deg); -webkit-transform: rotate(-90.0deg);}");
         sb.append("table.java-awt-geom-Point2D-").append(hashCode)
-                .append(" > tbody > tr > td > img {vertical-align: middle; position: relative; top: ").append(panY)
+                .append(" > tbody > tr > td > span {vertical-align: middle; position: relative; top: ").append(panY)
                 .append("px; left: ").append(panX).append("px;}");
         sb.append("</style>");
 
@@ -55,7 +55,11 @@ public class Point2DTemplate extends VebuggerTemplate {
                 .append(scale)
                 .append("</td><td></td></tr><tr><td rowspan=\"2\"><p class=\"rotate\">")
                 .append(-scale)
-                .append("</p></td><td class=\"cell up left masterCell\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAFklEQVQImWNggID/SBhDAC5BvCCGmQArdhTsYZweegAAAABJRU5ErkJggg==\" /></td><td class=\"cell up\"></td><td rowspan=\"2\"><p class=\"rotate\">")
+                .append("</p></td><td class=\"cell up left masterCell\"><span><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAFklEQVQImWNggID/SBhDAC5BvCCGmQArdhTsYZweegAAAABJRU5ErkJggg==\" /> (")
+                .append(x)
+                .append(", ")
+                .append(y)
+                .append(")</span></td><td class=\"cell up\"></td><td rowspan=\"2\"><p class=\"rotate\">")
                 .append(scale)
                 .append("</p></td></tr><tr><td class=\"cell left\"></td><td class=\"cell\"></td></tr><tr><td></td><td colspan=\"2\">")
                 .append(-scale).append("</td><td></td></tr></tbody></table>");
