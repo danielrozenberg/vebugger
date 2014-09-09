@@ -40,13 +40,15 @@ public class Point2DTemplate extends VebuggerTemplate {
         sb.append("table.java-awt-geom-Point2D {border-spacing: 0px; border-collapse: collapse; empty-cells: show; font-size: 12px; padding: 0;}");
         sb.append("table.java-awt-geom-Point2D > tbody > tr > td {text-align: center; vertical-align: center;}");
         sb.append("table.java-awt-geom-Point2D > tbody > tr > td.masterCell {text-align: left; vertical-align: top;}");
-        sb.append("table.java-awt-geom-Point2D > tbody > tr > td.cell {border: 1px dotted silver; width: 100px; height: 100px;}");
-        sb.append("table.java-awt-geom-Point2D > tbody > tr > td.up {border-bottom: 1px solid black;}");
-        sb.append("table.java-awt-geom-Point2D > tbody > tr > td.left {border-right: 1px solid black;}");
+        sb.append("table.java-awt-geom-Point2D > tbody > tr > td.cell {width: 100px; height: 100px;}");
+        sb.append("table.java-awt-geom-Point2D > tbody > tr > td.cell-up {border-bottom: 1px solid black;}");
+        sb.append("table.java-awt-geom-Point2D > tbody > tr > td.cell-left {border-right: 1px solid black;}");
         sb.append("table.java-awt-geom-Point2D > tbody > tr > td > p.rotate {transform: rotate(-90.0deg); -moz-transform: rotate(-90.0deg); -ms-transform: rotate(-90.0deg); -webkit-transform: rotate(-90.0deg);}");
         sb.append("table.java-awt-geom-Point2D-").append(hashCode)
-                .append(" > tbody > tr > td > span {vertical-align: middle; position: relative; top: ").append(panY)
-                .append("px; left: ").append(panX).append("px;}");
+                .append(" > tbody > tr > td > span {position: relative; top: ").append(panY).append("px; left: ")
+                .append(panX).append("px;}");
+        sb.append("table.java-awt-geom-Point2D-").append(hashCode);
+        sb.append(" > tbody > tr > td > span > img {vertical-align: top;}");
         sb.append("</style>");
 
         sb.append("<table class=\"java-awt-geom-Point2D java-awt-geom-Point2D-")
@@ -55,13 +57,13 @@ public class Point2DTemplate extends VebuggerTemplate {
                 .append(scale)
                 .append("</td><td></td></tr><tr><td rowspan=\"2\"><p class=\"rotate\">")
                 .append(-scale)
-                .append("</p></td><td class=\"cell up left masterCell\"><span><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAFklEQVQImWNggID/SBhDAC5BvCCGmQArdhTsYZweegAAAABJRU5ErkJggg==\" /> (")
+                .append("</p></td><td class=\"cell cell-up cell-left masterCell\"><span><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAFklEQVQImWNggID/SBhDAC5BvCCGmQArdhTsYZweegAAAABJRU5ErkJggg==\" /> (")
                 .append(x)
                 .append(", ")
                 .append(y)
-                .append(")</span></td><td class=\"cell up\"></td><td rowspan=\"2\"><p class=\"rotate\">")
+                .append(")</span></td><td class=\"cell cell-up\"></td><td rowspan=\"2\"><p class=\"rotate\">")
                 .append(scale)
-                .append("</p></td></tr><tr><td class=\"cell left\"></td><td class=\"cell\"></td></tr><tr><td></td><td colspan=\"2\">")
+                .append("</p></td></tr><tr><td class=\"cell cell-left\"></td><td class=\"cell\"></td></tr><tr><td></td><td colspan=\"2\">")
                 .append(-scale).append("</td><td></td></tr></tbody></table>");
     }
 }
