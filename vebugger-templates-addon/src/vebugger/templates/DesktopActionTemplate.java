@@ -54,7 +54,7 @@ public class DesktopActionTemplate extends VebuggerTemplate {
         sb.append("<style>");
         sb.append("table.java-awt-Desktop-Action > tbody > tr > td {font-family: monospace; font-size: 0.7em; text-align: center;}");
         sb.append("table.java-awt-Desktop-Action > tbody > tr > td.active {color: black;}");
-        sb.append("table.java-awt-Desktop-Action > tbody > tr > td.inactive {color: silver;}");
+        sb.append("table.java-awt-Desktop-Action > tbody > tr > td.inactive {color: gray;}");
         sb.append("</style>");
 
         sb.append("<table class=\"java-awt-Desktop-Action\"><tbody><tr>");

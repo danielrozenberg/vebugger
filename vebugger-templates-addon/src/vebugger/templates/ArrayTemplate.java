@@ -31,7 +31,7 @@ public class ArrayTemplate extends VebuggerTemplate {
             }
             sb.append("</tbody></table>");
         } else {
-            sb.append("[] <span style=\"color: silver; font-style: italic;\">(empty array)</span>");
+            sb.append("[] <span style=\"color: gray; font-style: italic;\">(empty array)</span>");
         }
     }
 

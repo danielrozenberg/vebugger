@@ -20,8 +20,8 @@ public class LinkedListTemplate extends VebuggerTemplate {
         sb.append("table.java-util-LinkedList {border-collapse: collapse; font-size: 12px;}");
         sb.append("table.java-util-LinkedList > * > tr > * {padding: 4px; text-align: center;}");
         sb.append("table.java-util-LinkedList > thead > tr {border-bottom: 2px solid black;}");
-        sb.append("table.java-util-LinkedList > * > tr > *:first-child {border-right: 1px dotted silver;}");
-        sb.append("table.java-util-LinkedList > tbody > tr > th {color: silver; font-weight: normal;}");
+        sb.append("table.java-util-LinkedList > * > tr > *:first-child {border-right: 1px dotted gray;}");
+        sb.append("table.java-util-LinkedList > tbody > tr > th {color: gray; font-weight: normal;}");
         sb.append("table.java-util-LinkedList > tbody > tr > td:last-child > div {border: 1px dotted silver; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; display: inline-block; padding: 10px; text-align: initial;}");
         sb.append("</style>");
 
@@ -36,7 +36,7 @@ public class LinkedListTemplate extends VebuggerTemplate {
             }
             sb.append("<tr><th></th><th>tail</th></tr></tbody></table>");
         } else {
-            sb.append("[] <span style=\"color: silver; font-style: italic;\">(empty LinkedList)</span>");
+            sb.append("[] <span style=\"color: gray; font-style: italic;\">(empty LinkedList)</span>");
         }
     }
 }
