@@ -36,7 +36,7 @@ Vebugger's visualization of a LinkedList instance.
 
 Installation instructions
 --------
-1. Import the plugin project (`vebugger-eclipse-plugin` in the vebugger repository) into your Eclipse workspace and run it as an Eclipse Application.
+1. Import the plugin project (`vebugger-eclipse-plugin` in the vebugger repository) into your Eclipse workspace and run it as an Eclipse Application. (Note: Please use the latest Eclipse Luna. Other Indigo/Juno are incompatible)
 2. Inside the "inner" Eclipse, import a project that you want to work on, we'll call this the `target` project.
 3. Also import the Vebugger Aid project (`vebugger-templates-addon` in the vebugger repository).
 4. Right click on the `target` project, select Build Path > Configure Build Path, select the Projects tab and add the `vebugger-templates-addon` project
